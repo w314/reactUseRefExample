@@ -42,7 +42,8 @@ function App() {
   // the second parameter of useEffect is used to trigger the function in the first parameter
   // whenever the second parameter's value changes the function in the first parameter runs
   // as we left the second parameter empty our function will run every time the page renders
-  // ---> renderCount jumps from 1 to 3 at the first name change is react strict mode is on
+  // ---> renderCount jumps from 1 to 3 at the first name change 
+  // ---> in development if react strict mode is on, final build works fine
   useEffect(() => {
     console.log('counting page render')
     renderCount.current = renderCount.current + 1
